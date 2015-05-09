@@ -51,11 +51,6 @@
         <h7 class="text-muted">coders friends</h7>
       </div>
 
-      <div class="jumbotron">
-        <h1>NSTU Coders Forum</h1>
-        <p class="lead">NSTU coders Frum is a forum based site . where nstu's professinal coders are in to solve your coding problems . Please login to join us.</p>
-        <p><a class="btn btn-lg btn-success" href='<spring:url value="/WEB-INF/jsp/Home.jsp"/>' role="button">Sign up today</a></p>
-      </div>
 
  </div>     
 
@@ -78,7 +73,9 @@
 
 
 
- 
+  <center>
+  		<tiles:insertAttribute name="body"/>
+  </center> 
    
    <center>
        <tiles:insertAttribute name="footer"/>
