@@ -39,16 +39,19 @@
 
 
  <div class="container">
+ <a href='<spring:url value="/"/>'>
+ <img  src="/css/photo/implemented.png"  alt="img_ban" height="100%" width="100%">
       <div class="header clearfix">
         <nav>
           <ul class="nav nav-pills pull-right">
             <li role="presentation" class="active"><a href='<spring:url value="/"/>'>Home</a></li>
-            <li role="presentation"><a href='<spring:url value="home.html"/>'>About</a></li>
+            <li role="presentation"><a href='<spring:url value="home.html"/>'>Forum</a></li>
             <li role="presentation"><a href="/WEB-INF/jsp/Home.jsp">Contact</a></li>
           </ul>
         </nav>
+        
         <h3 class="text-muted">NSTU Coders Forum</h3>
-        <h7 class="text-muted">coders friends</h7>
+        
       </div>
 
       <div class="jumbotron">
