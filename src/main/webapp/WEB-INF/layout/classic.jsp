@@ -36,7 +36,8 @@
 </head>
 <body>
 
-
+<%@ taglib uri="http://tiles.apache.org/tags-tiles-extras" prefix="tilesx" %>
+<tilesx:useAttribute name="current"/>
 
  <div class="container">
  <a href='<spring:url value="/"/>'>
@@ -44,9 +45,10 @@
       <div class="header clearfix">
         <nav>
           <ul class="nav nav-pills pull-right">
-            <li role="presentation" class="active"><a href='<spring:url value="/"/>'>Home</a></li>
-            <li role="presentation"><a href='<spring:url value="home.html"/>'>Forum</a></li>
+            <li role="presentation" class="${active=='index' ? 'active ' : ''}"><a href='<spring:url value="/"/>'>Home</a></li>
+            <li role="presentation" class="${active=='home' ? 'active ' : ''}"><a href='<spring:url value="home.html"/>'>Forum</a></li>
             <li role="presentation"><a href="/WEB-INF/jsp/Home.jsp">Contact</a></li>
+            <li role="presentation"  class="${active=='users' ? 'active ' : ''}"><a href='<spring:url value="users.html"/>'>Users</a></li>
           </ul>
         </nav>
         
